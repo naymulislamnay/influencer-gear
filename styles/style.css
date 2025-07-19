@@ -1,27 +1,118 @@
 /* fonts */
 .poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
 .roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
 .inter-regular {
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
 .manrope-regular {
-  font-family: "Manrope", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Shared Style */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+:root {
+    --theme-color: #E02C6D;
+    --black01: #3A3A3A;
+    --product-name-fs: 1.75rem;
+    --product-name-fc: #18191F;
+    --product-price-fs: 1.5rem;
+    --product-price-fc: rgba(0, 0, 0, 0.87);
+    --product-rt-des-fs: 0.875rem;
+    --product-rt-fc: #5E6366;
+    --product-des-fc: #787885;
+}
+
+
+
+/* nav-bar style */
+
+.top-logo {
+    color: var(--black01);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--black01);
+}
+
+nav ul li {
+    list-style: none;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 95px 120px 0;
+}
+
+
+.nav-options ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-end;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+/* resposive css for small device */
+
+@media screen and (max-width: 576px) {
+    .nav {
+        margin: 20px 10px 0;
+    }
+
+    .nav h2 {
+        font-size: 1rem;
+    }
+
+    .nav-options ul {
+        font-size: 0.5rem;
+        gap: 10px;
+    }
+}
+
+
+/* responsive css for medium device */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .nav {
+        margin: 20px 10px 0; 
+    }
+
+    .nav h2 {
+        font-size: 1.25rem;
+    }
+
+    .nav-options ul {
+        font-size: 0.6rem;
+        gap: 15px;
+    }
 }
