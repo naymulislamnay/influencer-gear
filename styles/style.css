@@ -33,6 +33,17 @@
     padding: 0px;
 }
 
+.btn-primary {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: white;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 2px;
+}
+
 
 :root {
     --theme-color: #E02C6D;
@@ -81,10 +92,48 @@ nav ul li {
     font-weight: 600;
 }
 
+/* banner-style */
+
+.banner-heading {
+    font-size: 3.25rem;
+    font-weight: bold;
+    color: var(--black01);
+}
+
+.banner-title {
+    color: var(--black01);
+    max-width: 505px;
+    margin: 16px 0;
+}
+
+.banner-btn {
+    margin-top: 16px;
+    border-radius: 41px;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px auto 0;
+    padding: 0 10px;
+    max-width: 1155px;
+    background-image: url(../assets/images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+.banner-content {
+    max-width: 582px;
+}
+
 
 /* resposive css for small device */
 
 @media screen and (max-width: 576px) {
+
+    /* nav-bar */
     .nav {
         margin: 20px 10px 0;
     }
@@ -97,6 +146,32 @@ nav ul li {
         font-size: 0.5rem;
         gap: 10px;
     }
+
+    /* banner */
+    .banner-heading {
+        font-size: 1.25rem;
+    }
+
+    .banner-title {
+        font-size: 0.5rem;
+        color: var(--black01);
+    }
+
+    .banner-btn {
+        font-size: 0.5rem;
+        margin-top: 8px;
+        border-radius: 20px;
+    }
+
+    .banner {
+        margin: 40px auto 0;
+        padding: 0 10px;
+    }
+
+    .banner img{
+        max-width: 40%;
+    }
+
 }
 
 
@@ -104,7 +179,7 @@ nav ul li {
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .nav {
-        margin: 20px 10px 0; 
+        margin: 20px 10px 0;
     }
 
     .nav h2 {
@@ -115,4 +190,32 @@ nav ul li {
         font-size: 0.6rem;
         gap: 15px;
     }
+
+
+    /* banner */
+    .banner-heading {
+        font-size: 1.5rem;
+    }
+
+    .banner-title {
+        font-size: 0.6rem;
+        color: var(--black01);
+    }
+
+    .banner-btn {
+        font-size: 0.6rem;
+        margin-top: 8px;
+        border-radius: 20px;
+    }
+
+    .banner {
+        margin: 40px auto 0;
+        padding: 0 10px;
+    }
+
+    .banner img{
+        max-width: 50%;
+    }
+
+
 }
